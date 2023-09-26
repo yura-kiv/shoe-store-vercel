@@ -13,7 +13,7 @@ const Header = () => {
       className={styles.headerWrapper}
       id="header"
     >
-      <Logo className="w-auto h-full" />
+      <Logo />
       {screen770_plus && <Menu />}
       <LeftELements />
       <CartWindow />
