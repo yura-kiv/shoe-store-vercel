@@ -35,16 +35,18 @@
       @apply h-10 w-full flex;
 
       .goToBtn {
-        @apply h-10 grow bg-backgroundOppositeSecond rounded-3xl flex items-center justify-between
+        @apply relative h-10 grow bg-backgroundOppositeSecond rounded-3xl flex items-center justify-between
           pl-4 pr-1.5 cursor-pointer transition-colors transition-transform hover:shadow-md
           active:bg-backgroundFirst select-none;
 
         &:hover {
           scale: 1.02;
+          transition: scale 0.08s ease-in-out;
         }
 
         &:active {
-          scale: 1.03;
+          scale: 1.04;
+          transition: scale 0.08s ease-in-out;
         }
 
         &:active span {
@@ -64,10 +66,10 @@
         }
 
         .arrowWrapper {
-          @apply relative w-7 h-7 bg-backgroundSecond rounded-full flex items-center justify-center;
+          @apply relative w-7 h-7 bg-backgroundSecond rounded-full grid items-center justify-items-center;
 
           .arrow {
-            @apply h-fit w-fit stroke-backgroundOppositeSecond;
+            @apply absolute stroke-backgroundOppositeSecond;
           }
         }
       }
