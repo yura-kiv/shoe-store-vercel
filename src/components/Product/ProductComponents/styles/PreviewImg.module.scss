@@ -6,10 +6,13 @@
     @apply relative w-full flex flex-wrap transition-all duration-300;
 
     .previewImgWrapper {
-      @apply relative w-full transition-all hover:scale-[1.025];
+      @apply relative w-full transition-all;
+      &:hover {
+        scale: 1.025;
+      }
 
       .previewImg {
-        @apply absolute h-[100%] w-[100%] top-0 left-0 object-cover;
+        @apply absolute h-full w-full top-0 left-0 object-cover;
       }
     }
   }
@@ -17,13 +20,13 @@
 
 @media screen and (max-width: 400px) {
   .previewImgMainWrapper {
-    @apply h-[calc(100vw/2)];
+    height: calc(100vw / 2);
 
     .carousellImgsWrapper {
-      @apply h-[calc(100vw/2)];
+      height: calc(100vw / 2);
 
       .previewImgWrapper {
-        @apply h-[calc(100vw/2)];
+        height: calc(100vw / 2);
       }
     }
   }
@@ -31,13 +34,13 @@
 
 @media screen and (min-width: 401px) {
   .previewImgMainWrapper {
-    @apply h-[calc(100vw/3)];
+    height: (100vw / 3);
 
     .carousellImgsWrapper {
-      @apply h-[calc(100vw/3)];
+      height: calc(100vw / 3);
 
       .previewImgWrapper {
-        @apply h-[calc(100vw/3)];
+        height: calc(100vw / 3);
       }
     }
   }
@@ -45,13 +48,13 @@
 
 @media screen and (min-width: 920px) {
   .previewImgMainWrapper {
-    @apply h-[calc(100vw/6)];
+    height: calc(100vw / 6);
 
     .carousellImgsWrapper {
-      @apply h-[calc(100vw/6)];
+      height: calc(100vw / 6);
 
       .previewImgWrapper {
-        @apply h-[calc(100vw/6)];
+        height: calc(100vw / 6);
       }
     }
   }

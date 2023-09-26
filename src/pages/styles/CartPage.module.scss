@@ -18,8 +18,9 @@
     @apply bg-backgroundSecond rounded-3xl shadow-md p-3;
 
     .cartItemsListWrapper {
-      @apply w-full min-h-[350px] bg-backgroundFirst mb-3 rounded-xl pl-3 pt-3 overflow-y-scroll
+      @apply w-full bg-backgroundFirst mb-3 rounded-xl pl-3 pt-3 overflow-y-scroll
         shadow-inner transition-colors transition-transform;
+      min-height: 350px;
     }
   }
 }
@@ -27,10 +28,10 @@
 @media only screen and (max-width: 792px) {
   .cartBlockWrapper,
   .formOrderWrapper {
-    @apply w-[80vw] h-fit;
+    @apply w-4/5 h-fit;
 
     .cartItemsListWrapper {
-      @apply h-[40vh];
+      height: 40vh;
     }
   }
 }
@@ -38,10 +39,12 @@
 @media only screen and (min-width: 792px) {
   .cartBlockWrapper,
   .formOrderWrapper {
-    @apply min-w-[350px] w-[30vw] h-fit;
+    @apply h-fit;
+    min-width: 350px;
+    width: 30vw;
 
     .cartItemsListWrapper {
-      @apply h-[60vh];
+      height: 60vh;
     }
   }
 

@@ -1,11 +1,19 @@
 .useFiltersBtn {
-  @apply min-w-[258px] h-10 mb-2 rounded-full pl-4 pr-1.5 flex bg-backgroundFirst
+  @apply h-10 mb-2 rounded-full pl-4 pr-1.5 flex bg-backgroundFirst
     justify-between items-center transition-all duration-75;
+  min-width: 258px;
 
   &.active {
     @apply bg-backgroundOppositeSecond cursor-pointer transition-all
-    hover:scale-[1.02] hover:shadow-md active:bg-backgroundFirst
-    active:scale-[1.03];
+    hover:shadow-md active:bg-backgroundFirst;
+
+    &:hover {
+      scale: 1.02;
+    }
+
+    &:active {
+      scale: 1.03;
+    }
 
     span {
       @apply text-textColorOppositeFirst;

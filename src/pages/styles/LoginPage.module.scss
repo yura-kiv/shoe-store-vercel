@@ -1,8 +1,11 @@
 .loginPageMainWrapper {
-  @apply w-full h-[60vh] flex items-center justify-center;
+  @apply w-full flex items-center justify-center;
+  height: 60vh;
 
   .loginPageWrapper {
-    @apply min-w-[360px] w-[30vw] h-fit bg-backgroundSecond rounded-3xl p-3 shadow-md;
+    @apply h-fit bg-backgroundSecond rounded-3xl p-3 shadow-md;
+    min-width: 360px;
+    width: 30vw;
 
     span {
       @apply block;

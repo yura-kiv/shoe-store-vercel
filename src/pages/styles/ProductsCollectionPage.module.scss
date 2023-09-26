@@ -8,7 +8,15 @@
   .filtersBtn,
   .menuBtn {
     @apply h-10 flex items-center justify-center rounded-full bg-backgroundSecond grow
-      cursor-pointer transition-all hover:shadow-md hover:scale-[1.02] active:text-textColorOppositeFirst
-      active:bg-backgroundOppositeSecond active:scale-[1.035];
+      cursor-pointer transition-all hover:shadow-md active:text-textColorOppositeFirst
+      active:bg-backgroundOppositeSecond;
+
+    &:hover {
+      scale: 1.02;
+    }
+
+    &:active {
+      scale: 1.035;
+    }
   }
 }

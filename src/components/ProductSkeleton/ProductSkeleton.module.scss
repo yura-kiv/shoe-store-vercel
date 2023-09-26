@@ -6,27 +6,32 @@
       rounded-3xl flex flex-wrap shadow-md transition-all duration-300;
 
     .previewImg {
-      @apply h-[calc(100vw/6)] w-full bg-backgroundFirst rounded-xl;
+      @apply w-full bg-backgroundFirst rounded-xl;
+      height: calc(100vw / 6);
     }
 
     .textInfo {
       @apply w-full h-20 grid grid-cols-2 items-center;
 
       .textInfoHeader {
-        @apply block w-[70%] h-7 mt-3 col-span-2 bg-backgroundFirst rounded-full;
+        @apply block h-7 mt-3 col-span-2 bg-backgroundFirst rounded-full;
+        width: 70%;
       }
 
       .textInfoBrand {
-        @apply row-start-2 h-3 w-[30%] bg-backgroundFirst rounded-full;
+        @apply row-start-2 h-3 bg-backgroundFirst rounded-full;
+        width: 30%;
       }
 
       .textInfoGender {
-        @apply row-start-3 h-3 w-[30%] bg-backgroundFirst rounded-full;
+        @apply row-start-3 h-3 bg-backgroundFirst rounded-full;
+        width: 30%;
       }
 
       .textInfoPrice {
-        @apply row-start-2 row-end-4 ml-auto h-7 w-[30%] bg-backgroundFirst
-      rounded-full;
+        @apply row-start-2 row-end-4 ml-auto h-7 bg-backgroundFirst
+          rounded-full;
+        width: 30%;
       }
     }
 

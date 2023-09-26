@@ -20,11 +20,11 @@
   }
 
   .navNextBtn {
-    @apply top-[calc(50%)] right-3;
+    @apply top-1/2 right-3;
   }
 
   .navPrevBtn {
-    @apply top-[calc(50%)] left-3;
+    @apply top-1/2 left-3;
 
     svg {
       @apply rotate-180;
@@ -51,36 +51,40 @@
 
 @media only screen and (max-width: 600px) {
   .productsMainSlider {
-    @apply h-[110vw] max-h-[480px];
+    height: 110vw;
+    max-height: 480px;
   }
 
   .productsSecondSlider {
     .imgThumbWrapper {
-      @apply h-[10vh];
+      height: 10vh;
     }
   }
 }
 
 @media only screen and (min-width: 600px) {
   .productsMainSlider {
-    @apply h-[70vw] max-h-[500px];
+    height: 70vw;
+    max-height: 500px;
   }
 
   .productsSecondSlider {
     .imgThumbWrapper {
-      @apply h-[15vh];
+      height: 15vh;
     }
   }
 }
 
 @media only screen and (min-width: 850px) {
   .productsMainSlider {
-    @apply h-[35vw] min-h-[400px] max-h-[600px];
+    height: 35vw;
+    min-height: 400px;
+    max-height: 600px;
   }
 
   .productsSecondSlider {
     .imgThumbWrapper {
-      @apply h-[15vh];
+      height: 15vh;
     }
   }
 }

@@ -1,3 +1,4 @@
 .App {
-  @apply relative w-full h-fit min-h-[calc(100vh-64px)] p-3;
+  @apply relative w-full h-fit p-3;
+  min-height: calc(100vh - 64px);
 }

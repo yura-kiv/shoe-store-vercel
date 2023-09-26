@@ -11,7 +11,7 @@
   }
 
   .productName {
-    @apply w-[80%] block mb-1 text-base font-bold;
+    @apply w-4/5 block mb-1 text-base font-bold;
   }
 
   .textInfo {
@@ -26,7 +26,7 @@
     @apply absolute top-3 right-3 smallGreenBtn;
 
     &.deleteBtn:hover .deleteIcon {
-      @apply rotate-[135deg];
+      rotate: 135deg;
     }
 
     .deleteIcon {

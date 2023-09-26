@@ -8,8 +8,12 @@
     .previousBtn,
     .nextBtn {
       @apply h-8 w-8 bg-backgroundOppositeSecond flex items-center justify-center
-        text-textColorOppositeFirst rounded-full hover:shadow-md hover:scale-[1.05]
+        text-textColorOppositeFirst rounded-full hover:shadow-md
         transition-all;
+
+      &:hover {
+        scale: 1.05;
+      }
 
       .arrowLeft,
       .arrowRight {
@@ -23,7 +27,11 @@
 
     .linkBtns {
       @apply h-10 w-10 flex items-center justify-center rounded-full bg-backgroundFirst
-      cursor-pointer transition-all text-sm hover:shadow-md hover:scale-[1.05];
+      cursor-pointer transition-all text-sm hover:shadow-md;
+
+      &:hover {
+        scale: 1.05;
+      }
     }
 
     .activeLinkBtn {

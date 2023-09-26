@@ -2,7 +2,9 @@
   @apply w-full h-fit flex items-center justify-center;
 
   .signupPageWrapper {
-    @apply min-w-[360px] w-[30vw] h-fit bg-backgroundSecond rounded-3xl p-3 shadow-md;
+    @apply h-fit bg-backgroundSecond rounded-3xl p-3 shadow-md;
+    min-width: 360px;
+    width: 30vw;
 
     span {
       @apply block;

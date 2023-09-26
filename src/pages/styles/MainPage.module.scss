@@ -23,13 +23,18 @@
     .bigBlockItem {
       @apply relative w-full bg-backgroundFirst rounded-2xl
         overflow-hidden cursor-pointer transition-all gridBackground
-        hover:scale-[1.005] hover:shadow-md;
+        hover:shadow-md;
+      &:hover {
+        scale: 1.005;
+      }
     }
 
     .smallBlockItem {
       @apply relative w-full bg-backgroundFirst rounded-2xl transition-all
-        cursor-pointer gridBackground overflow-hidden hover:scale-[1.005]
-        hover:shadow-md;
+        cursor-pointer gridBackground overflow-hidden hover:shadow-md;
+      &:hover {
+        scale: 1.005;
+      }
     }
   }
 }
@@ -43,10 +48,10 @@
     }
 
     .bigBlockItem {
-      @apply h-[35vh];
+      height: 35vh;
 
       img {
-        @apply w-[80%] -bottom-6;
+        @apply w-4/5 -bottom-6;
       }
 
       @for $i from 1 through 3 {
@@ -67,10 +72,10 @@
     }
 
     .smallBlockItem {
-      @apply h-[35vh];
+      height: 35vh;
 
       img {
-        @apply w-[80%] -bottom-4 -right-4;
+        @apply w-4/5 -bottom-4 -right-4;
       }
 
       &:hover .imgWrapper {
@@ -89,10 +94,12 @@
     }
 
     .bigBlockItem {
-      @apply h-[40vh] row-span-1 col-span-2;
+      @apply row-span-1 col-span-2;
+      height: 40vh;
 
       img {
-        @apply w-[55%] -bottom-4;
+        @apply -bottom-4;
+        width: 55%;
       }
 
       @for $i from 1 through 3 {
@@ -113,7 +120,7 @@
     }
 
     .smallBlockItem {
-      @apply h-[40vh];
+      height: 40vh;
 
       img {
         @apply w-full -bottom-4 -right-10;
@@ -134,7 +141,7 @@
       @apply h-full row-span-2 col-span-1;
 
       img {
-        @apply w-[80%] -bottom-6;
+        @apply w-4/5 -bottom-6;
       }
 
       @for $i from 1 through 3 {
@@ -155,10 +162,11 @@
     }
 
     .smallBlockItem {
-      @apply h-[40vh];
+      height: 40vh;
 
       img {
-        @apply w-[70%] -bottom-6 -right-6;
+        @apply -bottom-6 -right-6;
+        width: 70%;
       }
 
       &:hover .imgWrapper {

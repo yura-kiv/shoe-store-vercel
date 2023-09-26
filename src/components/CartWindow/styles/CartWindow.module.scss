@@ -21,8 +21,10 @@
     }
 
     .cartItemsList {
-      @apply min-h-[20vh] max-h-[40vh] w-full bg-backgroundFirst mb-3 rounded-xl px-3 pt-3 overflow-y-scroll
+      @apply w-full bg-backgroundFirst mb-3 rounded-xl px-3 pt-3 overflow-y-scroll
       shadow-inner transition-colors transition-transform;
+      min-height: 20vh;
+      max-height: 40vh;
     }
 
     .textInfo {
@@ -34,8 +36,16 @@
 
       .goToBtn {
         @apply h-10 grow bg-backgroundOppositeSecond rounded-3xl flex items-center justify-between
-          pl-4 pr-1.5 cursor-pointer transition-colors transition-transform hover:scale-[1.02] hover:shadow-md
-          active:bg-backgroundFirst active:scale-[1.03] select-none;
+          pl-4 pr-1.5 cursor-pointer transition-colors transition-transform hover:shadow-md
+          active:bg-backgroundFirst select-none;
+
+        &:hover {
+          scale: 1.02;
+        }
+
+        &:active {
+          scale: 1.03;
+        }
 
         &:active span {
           @apply text-textColorFirst font-medium;
@@ -75,10 +85,10 @@
 
 @media screen and (max-width: 600px) {
   .cartWindowFirstWrapper {
-    @apply fixed z-20 w-full h-[100vh] top-0 left-0 p-3 transition-all overflow-hidden -translate-y-full duration-500;
+    @apply fixed z-20 w-full h-screen top-0 left-0 p-3 transition-all overflow-hidden -translate-y-full duration-500;
 
     &.active {
-      @apply backdrop-blur-sm w-full h-[100vh] -translate-y-0;
+      @apply backdrop-blur-sm w-full h-screen -translate-y-0;
     }
 
     .cartWindowSecondWrapper {
@@ -92,7 +102,9 @@
 
 @media screen and (min-width: 600px) {
   .cartWindowFirstWrapper {
-    @apply absolute z-20 top-[65px] right-16 w-[390px] invisible;
+    @apply absolute z-20 right-16 invisible;
+    top: 65px;
+    width: 390px;
 
     &.active {
       @apply visible;

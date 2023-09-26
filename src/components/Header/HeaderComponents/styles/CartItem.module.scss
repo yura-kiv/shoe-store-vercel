@@ -3,7 +3,7 @@
     cursor-pointer transition-all px-1;
 
   &.active {
-    @apply [box-shadow:0_0_0_2px_var(--backgroundSecond),0_0_0_5px_var(--greenColorConstant)];
+    box-shadow: 0 0 0 2px var(--backgroundSecond), 0 0 0 5px var(--greenColorConstant);
   }
 
   .cartCount {
@@ -14,7 +14,9 @@
     @apply h-7 w-7 bg-greenColorConstant rounded-full flex items-center justify-center;
 
     .cartIcon {
-      @apply h-[18px] w-[18px] fill-darkColorConstant;
+      height: 18px;
+      width: 18px;
+      @apply fill-darkColorConstant;
     }
   }
 }

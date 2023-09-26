@@ -4,7 +4,11 @@
   .productSecondWrapper {
     @apply relative h-full p-3 bg-backgroundSecond gap-3
     rounded-3xl flex flex-wrap shadow-md transition-all duration-300
-    hover:scale-[1.015] hover:shadow-xl;
+     hover:shadow-xl;
+
+    &:hover {
+      scale: 1.015;
+    }
   }
 }
 

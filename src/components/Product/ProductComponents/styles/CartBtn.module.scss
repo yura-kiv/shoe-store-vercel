@@ -2,8 +2,16 @@
   @apply w-full h-10 rounded-full pl-4 pr-1.5
     flex justify-between items-center bg-backgroundOppositeSecond
     transition-all duration-75 cursor-pointer self-end
-    hover:scale-[1.02] hover:shadow-md active:bg-backgroundFirst
-    active:scale-[1.03] select-none;
+     hover:shadow-md active:bg-backgroundFirst
+     select-none;
+
+  &:hover {
+    scale: 1.02;
+  }
+
+  &:active {
+    scale: 1.03;
+  }
 
   &:active span {
     @apply text-textColorFirst font-medium;

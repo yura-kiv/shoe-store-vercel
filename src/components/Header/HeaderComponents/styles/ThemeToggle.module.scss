@@ -1,6 +1,7 @@
 .themeToggleWrapper {
-  @apply relative bg-backgroundFirst h-9 w-[70px] rounded-full flex items-center justify-between
+  @apply relative bg-backgroundFirst h-9 rounded-full flex items-center justify-between
     transition-all cursor-pointer;
+  width: 70px;
 
   .toggle {
     @apply absolute z-0 bg-greenColorConstant h-7 w-7 rounded-full translate-x-1
@@ -8,16 +9,16 @@
   }
 
   .sunLightTheme {
-    @apply relative z-[1] w-5 h-5 translate-x-2 fill-backgroundOppositeSecond transition-all;
+    @apply relative z-10 w-5 h-5 translate-x-2 fill-backgroundOppositeSecond transition-all;
   }
 
   .moonDarkTheme {
-    @apply relative z-[2] w-6 h-6 -translate-x-1.5 fill-backgroundOppositeSecond transition-all;
+    @apply relative z-20 w-6 h-6 -translate-x-1.5 fill-backgroundOppositeSecond transition-all;
   }
 
   &.dark {
     .toggle {
-      @apply translate-x-[38px];
+      transform: translateX(38px);
     }
 
     .moonDarkTheme {

@@ -1,15 +1,21 @@
 .mainLogo {
-  @apply h-full py-2 flex items-center cursor-pointer transition-all hover:scale-[1.02] overflow-hidden;
+  @apply h-full py-2 flex items-center cursor-pointer transition-all overflow-hidden;
+  &:hover {
+    scale: 1.02;
+  }
 
   .iconLogo {
     @apply relative h-full w-20 bg-backgroundOppositeSecond rounded-3xl;
 
     .starLogo {
-      @apply absolute h-5 w-5 top-2.5 left-[30px] fill-backgroundSecond transition-all;
+      @apply absolute h-5 w-5 top-2.5 fill-backgroundSecond transition-all;
+      left: 30px;
     }
 
     .ellipseLogo {
-      @apply absolute h-[72px] w-[72px] -top-[16px] left-[4px] fill-backgroundSecond transition-all;
+      @apply absolute -top-4 left-1 fill-backgroundSecond transition-all;
+      height: 72px;
+      width: 72px;
     }
   }
 
@@ -22,6 +28,7 @@
   }
 
   .textLogoDote {
-    @apply h-[17px] w-fit pl-4 fill-textColorFirst;
+    @apply w-fit pl-4 fill-textColorFirst;
+    height: 17px;
   }
 }

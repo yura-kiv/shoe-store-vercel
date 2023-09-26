@@ -69,7 +69,8 @@
     @apply flex-wrap;
 
     .sliderWrapper {
-      @apply w-full max-w-[480px];
+      @apply w-full;
+      max-width: 480px;
     }
 
     .infoProductWrapper {
@@ -83,11 +84,13 @@
     @apply flex-wrap;
 
     .sliderWrapper {
-      @apply w-[70vw] max-w-[500px];
+      width: 70vw;
+      max-width: 500px;
     }
 
     .infoProductWrapper {
-      @apply w-[85vw] max-w-[750px];
+      width: 85vw;
+      max-width: 750px;
     }
   }
 }
@@ -97,11 +100,14 @@
     @apply justify-center;
 
     .sliderWrapper {
-      @apply w-[35vw] min-w-[400px] max-w-[600px];
+      width: 35vw;
+      min-width: 400px;
+      max-width: 600px;
     }
 
     .infoProductWrapper {
-      @apply w-[45vw] max-w-[600px];
+      width: 45vw;
+      max-width: 600px;
     }
   }
 }

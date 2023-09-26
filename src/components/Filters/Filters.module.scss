@@ -1,9 +1,9 @@
 @media screen and (max-width: 769px) {
   .filtersFirstWrapper {
-    @apply fixed z-20 p-6 top-0 left-0 w-full h-[100vh] backdrop-blur-sm transition-transform duration-500;
+    @apply fixed z-20 p-6 top-0 left-0 w-full h-screen backdrop-blur-sm transition-transform duration-500;
 
     &.hiddenFirstWrapper {
-      @apply w-fit h-[100vh] backdrop-blur-0 -translate-x-[100%];
+      @apply w-fit h-screen backdrop-blur-0 -translate-x-full;
     }
 
     .filtersSecondWrapper {
@@ -21,8 +21,9 @@
 @media screen and (min-width: 769px) {
   .filtersFirstWrapper {
     .filtersSecondWrapper {
-      @apply relative w-[290px] h-fit shrink-0 p-4 pt-16 bg-backgroundSecond rounded-3xl mr-1.5
+      @apply relative h-fit shrink-0 p-4 pt-16 bg-backgroundSecond rounded-3xl mr-1.5
     shadow-md overflow-hidden transition-all duration-300 select-none;
+      width: 290px;
 
       .filtersHeader {
         @apply absolute top-4 left-4 block font-bold text-2xl text-textColorFirst
